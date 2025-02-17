@@ -1,6 +1,6 @@
-from flask import Flask
-from flask import render_template
+from flask import Flask, render_template
 from bs4 import BeautifulSoup
+from gunicorn import app
 
 app = Flask(__name__)
 
@@ -64,3 +64,6 @@ def hub_introduction():
             conteudo_convertido.append(HTML_CONVERTER_VAR)
 
     return render_template('index.html', textos=conteudo_convertido)
+
+if  __name__ == '__main__':
+    app.run()
