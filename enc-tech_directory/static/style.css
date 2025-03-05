@@ -7,15 +7,56 @@
 }
 
 body {
+    background-color: black;
+    background-attachment: scroll;
     height: 100%;
     font-family: "Poppins", serif;
     font-weight: 100;
+    background-color: black;
+    color: white;
+}
+
+.slogan {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-left: 50px;
+    flex-direction: row;
+    gap: 50px;
+
+    img {
+        width: 180px;
+        height: 160px;
+        margin-top: 120px;
+        margin-left: 60px;
+    }
+}
+
+.span-slogan {
+    color: #00db3e;
+}
+
+.slogan-tit {
+    display: flex;
+    flex-direction: column;
+    width: 0 auto;
+    line-height: 100px;
+    margin-top: 100px;
+    
+    p {
+        font-size: 100px;
+        font-weight: 600;
+    }
 }
 
 .main {
     width: 100%;
     height: 100%;
     padding: 50px;
+    background: rgba(0, 0, 0, 0.49);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
 }
 
 h1 {
@@ -37,9 +78,105 @@ li {
 }
 
 hr {
-    margin: 5px;
+    margin-top: 25px;
 }
 
 .bold {
     font-weight: 400;
+}
+
+.img-mobile {
+    display: none;
+}
+
+.reddit_redirect {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+}
+
+.text_of_creator {
+    white-space: nowrap;
+    font-size: 10px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 1070px){
+    h1 {
+        margin: 5px;
+        font-size: 25px;
+    }
+
+    .main {
+        padding: 25px;
+        margin-top: 100px;
+    }
+
+    .slogan {
+        position: relative;
+        left: -50px;
+    }
+}
+
+@media only screen and (max-width: 970px){
+    img {
+        display: none;
+    }
+
+    .slogan {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-mobile {
+        display: flex;
+        position: absolute;
+        opacity: 0.25;
+        width: 35vw !important;
+        height: 35vw !important;
+        margin-right: 75px;
+    }
+}
+
+@media only screen and (max-width: 740px){
+    .slogan-tit {
+        p {
+            white-space: nowrap;
+            font-size: clamp(3rem, 15vw, 6rem);
+        }
+    }   
+
+    .main {
+        margin-top: 15vw;
+    }
+
+    .img-mobile {
+        margin-bottom: 20px;
+        width: 42vw !important;
+        height: 42vw !important;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    .slogan-tit {
+        p {
+            font-size: clamp(2rem, 14vw, 6rem);
+            line-height: 15vw;
+        }
+    }
+
+    h1 {
+        font-size: clamp(1rem, 4vw, 3rem);
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .main {
+        margin-top: 10vw;
+    }
 }
