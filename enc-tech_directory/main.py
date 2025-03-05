@@ -8,7 +8,7 @@ app = Flask(__name__)
 def hub_introduction():
     converted_content = []
 
-    for i in range(1, 4):
+    for i in range(1, 5):
         with open(f"templates/TEXTO{i}.txt", "r") as file:
             content = file.read()
             formatter_var = formatter(content)
