@@ -7,9 +7,19 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <h4 class="reddit_redirect">Criado por <a href="https://www.reddit.com/user/Vousch/">@Vousch</a></h4>
+    <div class="slogan">
+        <img src="{{ url_for('static', filename='gear.png') }}" alt="" class="img-mobile">
+        <img src="{{ url_for('static', filename='gear.png') }}" alt="" srcset="">
+        <div class="slogan-tit">
+            <p><span class="span-slogan">UMA</span> PÁGINA</p>
+            <p><span class="span-slogan">UM</span> CURSO.</p>
+        </div>
+    </div>
+    <h4 class="text_of_creator">"É o melhor curso do mundo 🤓☝️" - <br>opinião do criador 👍</h4>
     <div class="main" id="main">
-        {% for texto in textos %}
-        <div class="curso-section">{{ texto | safe }}</div>
+        {% for text in texts %}
+        <div class="curso-section">{{ text | safe }}</div>
         {% endfor %}
     </div>
     <script>
