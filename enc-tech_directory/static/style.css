@@ -19,10 +19,11 @@ body {
 .slogan {
     display: flex;
     width: 100%;
-    height: 300px;
+    height: 260px;
     margin-left: 50px;
     flex-direction: row;
     gap: 50px;
+    background-color: #000000;
 
     img {
         width: 180px;
@@ -60,9 +61,9 @@ body {
 }
 
 h1 {
+    font-size: clamp(20px, 8vw, 3rem);
     font-weight: 400;
     margin: 40px;
-    margin-top: 100px;
 }
 
 h3 {
@@ -91,26 +92,83 @@ hr {
 }
 
 .reddit_redirect {
-    position: absolute;
     display: flex;
     justify-content: center;
-    width: 100%;
     margin: 5px;
+    background-color: #000000;
+    padding: 20px 0 0 0;
+    height: 100%;
+    margin: 0;
+
+    a {
+        color: green;
+        margin-left: 5px;
+    }
 }
 
 .text_of_creator {
     white-space: nowrap;
     font-size: 10px;
-    width: 100%;
     justify-content: center;
     display: flex;
     font-weight: 300;
+    margin: 20px;
+}
+
+.div-intro {
+    background-color: #090909 ;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    margin-top: 8px;
+
+    h4 {
+        margin: 10px;
+    }
+
+    h1 {
+        margin-top: 40px;
+    }
+}
+
+.div-intro_text {
+    display: flex;
+    position: relative;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    top: 10px;
+
+    h1 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+}
+
+.black_solid {
+    display: flex;
+    width: 100%;
+    height: 160px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.go_to_text {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: #00b432;
 }
 
 @media only screen and (max-width: 1070px){
     h1 {
         margin: 5px;
-        font-size: 25px;
+        font-size: clamp(20px, 8vw, 3rem);
     }
 
     .main {
@@ -172,7 +230,7 @@ hr {
     }
 
     h1 {
-        font-size: clamp(1rem, 4vw, 3rem);
+        font-size: clamp(20px, 8vw, 3rem);
     }
 }
 
