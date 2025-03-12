@@ -20,7 +20,6 @@ body {
     display: flex;
     width: 100%;
     height: 260px;
-    margin-left: 50px;
     flex-direction: row;
     gap: 50px;
     background-color: #000000;
@@ -40,6 +39,7 @@ body {
 .slogan-tit {
     display: flex;
     flex-direction: column;
+    white-space: nowrap;
     width: 0 auto;
     line-height: 100px;
     margin-top: 100px;
@@ -107,16 +107,29 @@ hr {
 }
 
 .text_of_creator {
+    display: none;
     white-space: nowrap;
     font-size: 10px;
     justify-content: center;
+    font-weight: 300;
+}
+
+.text_of_creator_pc {
+    display: flex;
+    margin-top: 200px;
+    white-space: nowrap;
+    font-size: clamp(10px, 1vw, 12px);
+    justify-content: center;
     display: flex;
     font-weight: 300;
-    margin: 20px;
 }
 
 .div-intro {
-    background-color: #090909 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0a0a0a ;
     width: 100%;
     height: 100%;
     padding: 15px;
@@ -136,6 +149,7 @@ hr {
     display: flex;
     position: relative;
     margin: 0;
+    width: 50%;
     flex-direction: column;
     justify-content: center;
     top: 10px;
@@ -149,10 +163,11 @@ hr {
 .black_solid {
     display: flex;
     width: 100%;
-    height: 160px;
+    height: 200px;
     background-color: black;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid hsla(0,0%,100%,.14);
 }
 
 .go_to_text {
@@ -165,9 +180,37 @@ hr {
     background-color: #00b432;
 }
 
+h5 {
+    text-align: center;
+    margin: 20px;
+
+    a {
+        text-decoration: none;
+        color: #00b432;
+    }
+}
+
+.div-intro_text {
+    h1 {
+        margin: 0;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 1210px){
+    .text_of_creator_pc {
+        display: none;
+    }
+
+    .text_of_creator {
+        display: flex;
+    }
+}
+
 @media only screen and (max-width: 1070px){
     h1 {
-        margin: 5px;
+        margin: 20px;
+        margin-top: -70px;
         font-size: clamp(20px, 8vw, 3rem);
     }
 
@@ -178,11 +221,17 @@ hr {
 
     .slogan {
         position: relative;
-        left: -50px;
+
     }
 }
 
 @media only screen and (max-width: 970px){
+    .black_solid {
+        display: flex;
+        width: 100%;
+        height: 160px;
+    }
+
     img {
         display: none;
     }
@@ -199,6 +248,14 @@ hr {
         width: 35vw !important;
         height: 35vw !important;
         margin-right: 75px;
+    }
+
+    .go_to_text {
+        margin-top: 100px;
+    }
+
+    .black_solid {
+        height: 230px;
     }
 }
 
@@ -219,6 +276,18 @@ hr {
         width: 42vw !important;
         height: 42vw !important;
     }
+
+    .go_to_text {
+        margin-top: 80px;
+    }
+
+    .black_solid {
+        height: 200px;
+    }
+
+    .div-intro_text {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 660px){
@@ -232,10 +301,19 @@ hr {
     h1 {
         font-size: clamp(20px, 8vw, 3rem);
     }
+
+    h1 {
+        margin: 10px;
+        margin-top: -50px;
+    }
 }
 
 @media only screen and (max-width: 500px){
-    .main {
-        margin-top: 10vw;
+    .go_to_text {
+        margin-top: 10px;
+    }
+
+    .black_solid {
+        height: 160px;
     }
 }
