@@ -8,13 +8,11 @@
 </head>
 <body>
     <div class="main" id="main">
-        {% for text in texts %}
-            <div class="curso-section">
-                <div class="text-container" id="text-container">
-                    {{ text | safe }}
-                </div>
+        <div class="curso-section">
+            <div class="text-container" id="text-container">
+                {{ text | safe }}
             </div>
-        {% endfor %}
+        </div>
     </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
