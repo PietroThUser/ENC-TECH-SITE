@@ -1,19 +1,16 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, abort
 from gunicorn import app
 from formatter import formatter
 
 app = Flask(__name__)
 
-@app.route("/curso")
-def hub_introduction():
-    converted_content = []
-    for i in range(1, 6):
-        with open(f"templates/TEXTO{i}.txt", "r") as file:
-            content = file.read()
-            formatter_var = formatter(content)
-            converted_content.append(formatter_var)
+@app.route("/curso/<int:actual_text>")
+def hub_introduction(actual_text):
+    with open(f"templates/TEXTOS/TEXTO{actual_text}.txt", "r") as file:
+        content = file.read()
+        actual_text = formatter(content)
 
-    return render_template('index.html', texts=converted_content)
+    return render_template('index.html', text=actual_text)
 
 @app.route("/")
 def home():
