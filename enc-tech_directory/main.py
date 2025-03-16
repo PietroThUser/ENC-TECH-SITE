@@ -10,11 +10,15 @@ def hub_introduction(actual_text):
         content = file.read()
         actual_text = formatter(content)
 
-    return render_template('index.html', text=actual_text)
+    return render_template('text.html', text=actual_text)
 
 @app.route("/")
 def home():
-    return render_template('intro.html')
+    with open("templates/roadmap.txt", "r") as roadmap_archive:
+        roadmap_content = roadmap_archive.read()
+        roadmap_text = formatter(roadmap_content)
+
+    return render_template('index.html', roadmap=roadmap_text)
 
 if __name__ == '__main__':
     app.run()
