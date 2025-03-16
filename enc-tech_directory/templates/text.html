@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enc-Tech</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='text.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
@@ -13,7 +14,10 @@
                 {{ text | safe }}
             </div>
         </div>
+        <button class="btn_text btn_right" onclick="next_page()"><i class="fa-solid fa-right-long"></i></button>
+        <button class="btn_text btn_left" onclick="back_page()"><i class="fa-solid fa-left-long"></i></button>
     </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://kit.fontawesome.com/e82009d315.js" crossorigin="anonymous"></script>
 </body>
 </html>
