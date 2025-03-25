@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENC-TECH</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background-color: #0a0a0a;">
+    <h4 class="reddit_redirect">Criado por <a href="https://www.reddit.com/user/Vousch/"><i style="margin: 2px;" class="fa-brands fa-reddit-alien"></i>@Vousch</a></h4>
+    <div class="slogan">
+        <img src="{{ url_for('static', filename='gear.png') }}" alt="" class="img-mobile">
+        <img src="{{ url_for('static', filename='gear.png') }}" alt="" class="logo">
+        <div class="slogan-tit">
+            <p><span class="span-slogan">UM</span> CLICK</p>
+            <p><span class="span-slogan">UM</span> FUTURO.</p>
+        </div>
+        <h4 class="text_of_creator_pc">"É o melhor curso do mundo 🤓☝️" - <br>opinião do criador 👍</h4>
+    </div>
+    <div class="black_solid">
+        <div>
+            <h5><i class="fa-solid fa-circle-check"></i>Gratuito</h5>
+            <h5><i class="fa-solid fa-circle-check"></i>Intuitivo</h5>
+            <h5><i class="fa-solid fa-circle-check"></i>Completo</h5>
+        </div>
+        <button class="go_to_text">
+            <a href="/home" style="text-decoration: none; color: #fff;">COMEÇAR O CURSO <i class="fa-solid fa-right-long"></i></a>
+        </button>
+    </div>
+    <div class="div-intro">
+        <h4 class="text_of_creator">"É o melhor curso do mundo 🤓☝️" - <br>opinião do criador 👍</h4>
+        <div class="div-intro_text">
+            <h1 style="font-weight: 600;">Sobre o curso 💻📖</h1>
+            <h4 style="font-weight: 200;">Um curso simples, que te ensinará o básico sobre a origem e o funcionamento dos computadores. Você aprenderá desde a origem dos computadores modernas, até lógica de programação e banco de dados em sistemas web</h4>
+        </div>
+        <h5><a href="/home">Ir ao curso <i class="fa-solid fa-right-long"></i></a></h5>
+    </div>
+    <div class="roadmap" id="roadmap">
+        <h1>Roadmap</h1>
+        {{ roadmap | safe }}
+    </div>
+    <script src="https://kit.fontawesome.com/e82009d315.js" crossorigin="anonymous"></script>
+</body>
+</html>
