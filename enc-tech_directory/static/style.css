@@ -149,6 +149,7 @@ body {
     color: white;
     font-weight: 600;
     background-color: var(--secondary-color);
+    margin-top: 30px;
 }
 
 .black_solid div {
@@ -158,6 +159,24 @@ body {
 
     i {
         margin-right: 10px;
+        color: var(--primary-color);
+    }
+}
+
+.black_solid-text {
+    text-align: center;
+    position: relative;
+    top: 30px;
+    width: 80%;
+
+    h4 {
+        font-size: 14px;
+        font-weight: 400;
+        width: 100%;
+    }
+
+    span {
+        font-size: 18px;
         color: var(--primary-color);
     }
 }
@@ -205,6 +224,10 @@ h5 {
         font-size: 40px;
         margin: 20px 0 50px 0;
     }
+
+    i {
+        color: black;
+    }
 }
 
 @media only screen and (max-width: 1210px){
@@ -249,26 +272,26 @@ h5 {
         display: flex;
         position: absolute;
         opacity: 0.25;
-        width: 35vw !important;
-        height: 35vw !important;
+        width: 300px !important;
+        height: 300px !important;
         margin-right: 75px;
     }
 
-    .go_to_text {
-        margin-bottom: 30px;
-    }
-
     .black_solid {
-        gap: 60px;
+        gap: 30px;
     }
 
     .black_solid div {
         position: relative;
         top: 50px;
     }
+
+    .black_solid-text {
+        top: 76px !important;
+    }
 }
 
-@media only screen and (max-width: 740px){
+@media only screen and (max-width: 780px){
     .slogan-tit {
         p {
             white-space: nowrap;
@@ -313,6 +336,10 @@ h5 {
 }
 
 @media only screen and (max-width: 499px){
+    .black_solid-text {
+        top: 50px !important;
+    }
+
     .div-intro_text {
         width: 100%;
     }
@@ -334,6 +361,15 @@ h5 {
 }
 
 @media only screen and (max-width: 360px){
+    .black_solid {
+        height: 400px !important;
+    }
+
+    .go_to_text {
+        position: relative;
+        top: 30px;
+    }
+
     .roadmap {
         h3 {
             margin: 10px;
