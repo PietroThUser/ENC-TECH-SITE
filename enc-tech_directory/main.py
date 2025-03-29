@@ -1,6 +1,6 @@
 from flask import Flask, render_template, abort
 from gunicorn import app
-from formatter import formatter
+from formatter import formatter, formatter_roadmap
 
 app = Flask(__name__)
 
@@ -26,9 +26,15 @@ def index():
 
 @app.route("/home")
 def home():
-    texts = [f"/curso/{i}" for i in range(1, 6)]
+    try:
+        with open("templates/roadmap_home.txt", "r") as roadmapHome_archive:
+            roadmapHome_content = roadmapHome_archive.read()
+            roadmapHome_text = formatter_roadmap(roadmapHome_content)
 
-    return render_template("home.html", texts=texts)
+        return render_template("home.html", roadmapHome=roadmapHome_text)
+    
+    except FileNotFoundError:
+        abort(404)
 
 if __name__ == '__main__':
     app.run()

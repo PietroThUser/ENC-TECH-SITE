@@ -1,0 +1,137 @@
+### Módulo 1: Fundamentos da Computação
+-1. História da computação: Dos ábacos aos computadores quânticos.
+-2. Código binário: Representação de dados em 0s e 1s.
+-3. Transistores: Funcionamento e papel na computação moderna.
+-4. Arquitetura de Von Neumann: Modelo básico de computadores.
+-5. Hardware vs. Software: Diferenças e interações.
+-6. Componentes físicos do computador: CPU, RAM, disco rígido, placa-mãe.
+-7. Sistemas numéricos: Binário, hexadecimal e decimal.
+-8. Representação de dados: Texto (ASCII/Unicode), imagens (RGB), áudio (ondas sonoras).
+-9. Clock e frequência: Como a velocidade do processador é medida.
+-10. Memória primária e secundária: Diferenças entre RAM e armazenamento.
+
+---
+
+### Módulo 2: Sistemas Operacionais e Kernel
+-11. O que é um sistema operacional? Funções e exemplos (Windows, macOS, Linux).
+-12. Kernel: Tipos (monolítico, micronúcleo) e responsabilidades.
+-13. Processos e threads: Gerenciamento de tarefas.
+-14. Sistema de arquivos: Hierarquia e organização (NTFS, ext4).
+-15. Interface gráfica (GUI) vs. Linha de comando (CLI).
+-16. Virtualização: Máquinas virtuais e contêineres (Docker).
+-17. Segurança básica: Permissões de usuário e grupos.
+-18. Gerenciamento de memória: Alocação e paginação.
+-19. Drivers de dispositivo: Comunicação entre hardware e software.
+-20. Engenharia reversa na programação: Técnicas para entender sistemas legados.
+
+---
+
+### Módulo 3: Internet e Redes
+-21. Como a internet funciona: Protocolos (TCP/IP, HTTP/HTTPS).
+-22. Modelo OSI: Camadas de comunicação em redes.
+-23. Roteadores e switches: Funcionamento básico.
+-24. DNS: Tradução de nomes para IPs.
+-25. VPNs: Criptografia e túneis virtuais.
+-26. Proxy: Intermediários para requisições web.
+-27. Firewalls: Proteção contra ataques externos.
+-28. IoT: Dispositivos conectados à internet.
+-29. Cloud Computing: Serviços em nuvem (AWS, Azure, Google Cloud).
+-30. Segurança em redes: Ataques comuns (DDoS, phishing).
+
+---
+
+### Módulo 4: Introdução à Programação
+-31. Lógica de programação: Algoritmos e pseudocódigo.
+-32. Ambientes de desenvolvimento: VS Code, PyCharm.
+-33. Hello World! (Python): Primeiro programa.
+-34. Variáveis e tipos de dados: Int, float, string, boolean.
+-35. Estruturas de controle: If/else, loops (for/while).
+-36. Funções: Modularização de código.
+-37. Depuração (debugging): Identificação de erros.
+-38. Linguagens compiladas vs. interpretadas: Diferenças (C vs. Python).
+-39. Git e GitHub: Controle de versão.
+-40. Dúvidas online: Uso do Stack Overflow e documentação.
+
+---
+
+### Módulo 5: Programação Intermediária
+-41. Estruturas de dados: Listas, tuplas, dicionários (Python).
+-42. Manipulação de arquivos: Leitura/escrita em TXT e CSV.
+-43. POO (Programação Orientada a Objetos): Classes, objetos, herança.
+-44. Erros e exceções: Try/except.
+-45. Módulos e bibliotecas: Importação e uso (NumPy, Pandas).
+-46. APIs: Consumo de dados externos (JSON).
+-47. Testes unitários: Validação de código.
+-48. RegEx (Expressões Regulares): Padrões em texto.
+-49. Concorrência: Threads e paralelismo.
+-50. Linguagens estáticas: Introdução a C/C++.
+
+---
+
+### Módulo 6: Algoritmos e Complexidade
+-51. Análise de algoritmos: Notação Big O.
+-52. Busca linear vs. binária: Eficiência comparada.
+-53. Algoritmos de ordenação: Bubble Sort, Merge Sort.
+-54. Recursão: Funções que chamam a si mesmas.
+-55. Algoritmos gananciosos: Soluções locais ótimas.
+-56. Programação dinâmica: Otimização de subproblemas.
+-57. Grafos: Representação e algoritmos (DFS, BFS).
+-58. Hash Tables: Colisões e resolução.
+-59. Árvores binárias: Inserção e busca.
+-60. Projeto prático: Implementação de um algoritmo de ordenação.
+
+---
+
+### Módulo 7: Desenvolvimento Web
+-61. HTML: Estrutura de páginas web.
+-62. CSS: Estilização (flexbox, grid).
+-63. JavaScript: Manipulação do DOM.
+-64. Frameworks front-end: React/Vue.js.
+-65. Back-end com Flask (Python): Rotas e templates.
+-66. Bancos de dados: SQL vs. NoSQL.
+-67. APIs REST: Criação com Python.
+-68. Autenticação: JWT e OAuth.
+-69. Deploy: Hospedagem em serviços como Heroku.
+-70. Web Security: SQL Injection, XSS.
+
+---
+
+### Módulo 8: Bases de Dados
+-71. Modelo relacional: Tabelas, chaves primárias e estrangeiras.
+-72. SQL básico: SELECT, INSERT, UPDATE, DELETE.
+-73. Joins: INNER, LEFT, RIGHT.
+-74. Normalização: Redução de redundâncias.
+-75. Transações ACID: Atomicidade e consistência.
+-76. Indexação: Aceleração de consultas.
+-77. MongoDB: Bancos de dados não relacionais.
+-78. ORM (Mapeamento objeto-relacional): SQLAlchemy.
+-79. Data Warehousing: Armazenamento analítico.
+-80. ETL: Extração, transformação e carga de dados.
+
+---
+
+### Módulo 9: Inteligência Artificial e Machine Learning
+-81. IA vs. Machine Learning: Diferenças e aplicações.
+-82. Redes neurais: Perceptrons e camadas.
+-83. TensorFlow/PyTorch: Frameworks para ML.
+-84. Aprendizado supervisionado: Classificação e regressão.
+-85. Aprendizado não supervisionado: Clustering (K-means).
+-86. Processamento de linguagem natural (NLP): Tokenização.
+-87. Visão computacional: Detecção de objetos com OpenCV.
+-88. Ética em IA: Viés algorítmico e privacidade.
+-89. Reinforcement Learning: Agentes e recompensas.
+-90. Projeto prático: Classificador de imagens.
+
+---
+
+### Módulo 10: Linux e Segurança
+-91. História do Linux: GNU, Linus Torvalds.
+-92. Terminal básico: Comandos (ls, cd, grep).
+-93. Permissões no Linux: chmod e chown.
+-94. Shell Scripting: Automação de tarefas.
+-95. Kernel customization: Compilação e módulos.
+-96. Criptografia: Chaves públicas/privadas, SSL/TLS.
+-97. Penetration Testing: Ferramentas como Metasploit.
+-98. Segurança de redes: Sniffing e MITM.
+-99. Blockchain: Princípios e criptomoedas.
+-100. Projeto final: Desenvolver um sistema integrado (hardware + software).

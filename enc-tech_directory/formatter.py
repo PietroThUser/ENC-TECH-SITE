@@ -12,27 +12,27 @@ def formatter(content):
         
         if line.startswith("### "):
             h3 = soup.new_tag("h3")
-            h3.string = line.replace("### ", "").strip()
+            h3.string = line.replace("### ", "")
             soup.append(h3)
             actual_ul = None  # Reseta ao criar novo cabeçalho
 
         elif line.startswith("## "):
             h2 = soup.new_tag("h2")
-            h2.string = line.replace("## ", "").strip()
+            h2.string = line.replace("## ", "")
             soup.append(h2)
             actual_ul = None
 
         elif line.startswith("# "):
             h1 = soup.new_tag("h1")
-            h1.string = line.replace("# ", "").strip()
+            h1.string = line.replace("# ", "")
             soup.append(h1)
             actual_ul = None
 
         elif line.startswith("- "):
             li = soup.new_tag("li")
-            li.string = line.replace("- ", "").strip()
+            li.string = line.replace("- ", "")
             
-            if not actual_ul:  # Cria nova UL se não existir
+            if actual_ul is None:  # Cria nova UL se não existir
                 actual_ul = soup.new_tag("ul")
                 soup.append(actual_ul)
                 
@@ -61,5 +61,24 @@ def formatter(content):
             p.string = line
             soup.append(p)
             actual_ul = None
+
+    return soup.prettify()
+
+def formatter_roadmap(roadmap):
+    soup = BeautifulSoup(features="html.parser")
+    lines = roadmap.split("\n")
+    roadmapHome_index = 1
+
+    for line in lines:
+        line = line.strip()
+
+        if line.startswith("-"):
+            a = soup.new_tag("a")
+            a["href"] = f"/curso/{roadmapHome_index}"
+            a.string = line.replace("-", "")
+
+            roadmapHome_index += 1
+
+            soup.append(a)
 
     return soup.prettify()

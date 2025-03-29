@@ -5,16 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="main_content">
-        {% for text in texts %}
-        <div class="main_content_item">
-            <h1>Parte {{ loop.index }}</h1>
-            <a href="{{ text }}"><button><i class="fa-solid fa-right-long"></i></button></a>
-        </div>
-        {% endfor %}
+        {{ roadmapHome | safe }}
     </div>
     <script src="https://kit.fontawesome.com/e82009d315.js" crossorigin="anonymous"></script>
 </body>
