@@ -133,7 +133,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 300px;
+    height: 400px;
     background-color: black;
     align-items: center;
     justify-content: center;
@@ -170,13 +170,13 @@ body {
     width: 80%;
 
     h4 {
-        font-size: 14px;
+        font-size: 20px;
         font-weight: 400;
         width: 100%;
     }
 
     span {
-        font-size: 18px;
+        font-size: 25px;
         color: var(--primary-color);
     }
 }
@@ -253,12 +253,6 @@ h5 {
 }
 
 @media only screen and (max-width: 970px){
-    .black_solid {
-        display: flex;
-        width: 100%;
-        height: 300px !important;
-    }
-
     .logo {
         display: none;
     }
@@ -362,12 +356,20 @@ h5 {
 
 @media only screen and (max-width: 360px){
     .black_solid {
-        height: 400px !important;
+        height: 500px !important;
+    }
+
+    .black_solid-text {
+        top: 0 !important;
+    }
+
+    .black_solid div {
+        top: 0;
     }
 
     .go_to_text {
         position: relative;
-        top: 30px;
+        top: 18px;
     }
 
     .roadmap {
