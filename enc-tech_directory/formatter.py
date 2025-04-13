@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString
 
 def formatter(content):
     soup = BeautifulSoup(features="html.parser")
@@ -72,13 +72,34 @@ def formatter_roadmap(roadmap):
     for line in lines:
         line = line.strip()
 
-        if line.startswith("-"):
+        if line.startswith("- "):
+            div = soup.new_tag("div")
+
+            i = soup.new_tag("i")
+            i["class"] = "fa-solid fa-play"
+
+            btn = soup.new_tag("button")
+            btn_a = soup.new_tag("a")
+            btn_a["href"] = f"/curso/{roadmapHome_index}"
+
+            p = soup.new_tag("p")
+            p.string = f"Parte {roadmapHome_index}"
+
             a = soup.new_tag("a")
-            a["href"] = f"/curso/{roadmapHome_index}"
             a.string = line.replace("-", "")
 
             roadmapHome_index += 1
 
-            soup.append(a)
+            btn_a.append(i)
+            btn.append(btn_a)
+            div.append(btn)
+            div.append(p)
+            div.append(a)
+            soup.append(div)
+
+        elif line.startswith("---"):
+            hr = soup.new_tag("hr")
+
+            soup.append(hr)
 
     return soup.prettify()

@@ -7,7 +7,7 @@
 
 body {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     background-color: var(--secondary-bgcolor);
 }
 
@@ -18,11 +18,38 @@ body {
     margin: 100px;
 }
 
+.main_content div{
+    display: flex;
+}
+
 .main_content a {
-    background-color: hsla(0,0%,100%,.14);
     border-radius: 10px;
     padding: 10px;
     font-family: "Poppins", sans-serif;
     color: white;
     text-decoration: none;
+}
+
+.main_content button {
+    background-color: hsla(0,0%,100%,.14);
+    border: none;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    margin-left: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-top: 4px;
+}
+
+.main_content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: #00db3e;
+    font-weight: 800;
+    border-radius: 14px;
+    width: 60px;
+    text-align: center;
 }
