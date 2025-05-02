@@ -1,0 +1,137 @@
+### Módulo 1: Fundamentos da Computação
+-  História da computação: Dos ábacos aos computadores quânticos
+-  Código binário: Representação de dados em s e s
+-  Transistores: Funcionamento e papel na computação moderna
+-  Arquitetura de Von Neumann: Modelo básico de computadores
+-  Hardware vs Software: Diferenças e interações
+-  Componentes físicos do computador: CPU, RAM, disco rígido, placa-mãe
+-  Sistemas numéricos: Binário, hexadecimal e decimal
+-  Representação de dados: Texto (ASCII/Unicode), imagens (RGB), áudio (ondas sonoras)
+-  Clock e frequência: Como a velocidade do processador é medida
+-  Memória primária e secundária: Diferenças entre RAM e armazenamento
+
+---
+
+### Módulo 2: Sistemas Operacionais e Kernel
+-  O que é um sistema operacional? Funções e exemplos (Windows, macOS, Linux)
+-  Kernel: Tipos (monolítico, micronúcleo) e responsabilidades
+-  Processos e threads: Gerenciamento de tarefas
+-  Sistema de arquivos: Hierarquia e organização (NTFS, ext)
+-  Interface gráfica (GUI) vs Linha de comando (CLI)
+-  Virtualização: Máquinas virtuais e contêineres (Docker)
+-  Segurança básica: Permissões de usuário e grupos
+-  Gerenciamento de memória: Alocação e paginação
+-  Drivers de dispositivo: Comunicação entre hardware e software
+-  Engenharia reversa na programação: Técnicas para entender sistemas legados
+
+---
+
+### Módulo 3: Internet e Redes
+-  Como a internet funciona: Protocolos (TCP/IP, HTTP/HTTPS)
+-  Modelo OSI: Camadas de comunicação em redes
+-  Roteadores e switches: Funcionamento básico
+-  DNS: Tradução de nomes para IPs
+-  VPNs: Criptografia e túneis virtuais
+-  Proxy: Intermediários para requisições web
+-  Firewalls: Proteção contra ataques externos
+-  IoT: Dispositivos conectados à internet
+-  Cloud Computing: Serviços em nuvem (AWS, Azure, Google Cloud)
+-  Segurança em redes: Ataques comuns (DDoS, phishing)
+
+---
+
+### Módulo 4: Introdução à Programação
+-  Lógica de programação: Algoritmos e pseudocódigo
+-  Ambientes de desenvolvimento: VS Code, PyCharm
+-  Hello World! (Python): Primeiro programa
+-  Variáveis e tipos de dados: Int, float, string, boolean
+-  Estruturas de controle: If/else, loops (for/while)
+-  Funções: Modularização de código
+-  Depuração (debugging): Identificação de erros
+-  Linguagens compiladas vs interpretadas: Diferenças (C vs Python)
+-  Git e GitHub: Controle de versão
+-  Dúvidas online: Uso do Stack Overflow e documentação
+
+---
+
+### Módulo 5: Programação Intermediária
+-  Estruturas de dados: Listas, tuplas, dicionários (Python)
+-  Manipulação de arquivos: Leitura/escrita em TXT e CSV
+-  POO (Programação Orientada a Objetos): Classes, objetos, herança
+-  Erros e exceções: Try/except
+-  Módulos e bibliotecas: Importação e uso (NumPy, Pandas)
+-  APIs: Consumo de dados externos (JSON)
+-  Testes unitários: Validação de código
+-  RegEx (Expressões Regulares): Padrões em texto
+-  Concorrência: Threads e paralelismo
+-  Linguagens estáticas: Introdução a C/C++
+
+---
+
+### Módulo 6: Algoritmos e Complexidade
+-  Análise de algoritmos: Notação Big O
+-  Busca linear vs binária: Eficiência comparada
+-  Algoritmos de ordenação: Bubble Sort, Merge Sort
+-  Recursão: Funções que chamam a si mesmas
+-  Algoritmos gananciosos: Soluções locais ótimas
+-  Programação dinâmica: Otimização de subproblemas
+-  Grafos: Representação e algoritmos (DFS, BFS)
+-  Hash Tables: Colisões e resolução
+-  Árvores binárias: Inserção e busca
+-  Projeto prático: Implementação de um algoritmo de ordenação
+
+---
+
+### Módulo 7: Desenvolvimento Web
+-  HTML: Estrutura de páginas web
+-  CSS: Estilização (flexbox, grid)
+-  JavaScript: Manipulação do DOM
+-  Frameworks front-end: React/Vuejs
+-  Back-end com Flask (Python): Rotas e templates
+-  Bancos de dados: SQL vs NoSQL
+-  APIs REST: Criação com Python
+-  Autenticação: JWT e OAuth
+-  Deploy: Hospedagem em serviços como Heroku
+-  Web Security: SQL Injection, XSS
+
+---
+
+### Módulo 8: Bases de Dados
+-  Modelo relacional: Tabelas, chaves primárias e estrangeiras
+-  SQL básico: SELECT, INSERT, UPDATE, DELETE
+-  Joins: INNER, LEFT, RIGHT
+-  Normalização: Redução de redundâncias
+-  Transações ACID: Atomicidade e consistência
+-  Indexação: Aceleração de consultas
+-  MongoDB: Bancos de dados não relacionais
+-  ORM (Mapeamento objeto-relacional): SQLAlchemy
+-  Data Warehousing: Armazenamento analítico
+-  ETL: Extração, transformação e carga de dados
+
+---
+
+### Módulo 9: Inteligência Artificial e Machine Learning
+-  IA vs Machine Learning: Diferenças e aplicações
+-  Redes neurais: Perceptrons e camadas
+-  TensorFlow/PyTorch: Frameworks para ML
+-  Aprendizado supervisionado: Classificação e regressão
+-  Aprendizado não supervisionado: Clustering (K-means)
+-  Processamento de linguagem natural (NLP): Tokenização
+-  Visão computacional: Detecção de objetos com OpenCV
+-  Ética em IA: Viés algorítmico e privacidade
+-  Reinforcement Learning: Agentes e recompensas
+-  Projeto prático: Classificador de imagens
+
+---
+
+### Módulo 10: Linux e Segurança
+-  História do Linux: GNU, Linus Torvalds
+-  Terminal básico: Comandos (ls, cd, grep)
+-  Permissões no Linux: chmod e chown
+-  Shell Scripting: Automação de tarefas
+-  Kernel customization: Compilação e módulos
+-  Criptografia: Chaves públicas/privadas, SSL/TLS
+-  Penetration Testing: Ferramentas como Metasploit
+-  Segurança de redes: Sniffing e MITM
+-  Blockchain: Princípios e criptomoedas
+-  Projeto final: Desenvolver um sistema integrado (hardware + software)
