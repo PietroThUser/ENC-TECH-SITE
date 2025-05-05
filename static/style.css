@@ -11,7 +11,6 @@ body {
     font-family: "Chakra Petch", sans-serif;
     background-color: black;
     color: white;
-    height: 100%;
     margin: 0;
 }
 
@@ -66,6 +65,14 @@ canvas {
         padding: 0 60px 0 60px;
         letter-spacing: 3px;
         margin-top: -40px;
+    }
+
+    div {
+        align-items: center; 
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 150px;
     }
 }
 
