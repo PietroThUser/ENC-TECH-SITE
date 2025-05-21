@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/curso/<int:actual_text>")
 def hub_introduction(actual_text):
-    with open(f"templates/TEXTOS/TEXTO{actual_text}.txt", "r") as file:
+    with open(f"templates/TEXTOS/TEXTO{actual_text}.txt", "r", encoding="utf-8") as file:
         content = file.read()
         actual_text = formatter(content)
 
@@ -15,7 +15,7 @@ def hub_introduction(actual_text):
 @app.route("/")
 def index():
     try:
-        with open("templates/roadmap.txt", "r") as roadmap_archive:
+        with open("templates/roadmap.txt", "r", encoding="utf-8") as roadmap_archive:
             roadmap_content = roadmap_archive.read()
             roadmap_text = formatter(roadmap_content)
 
