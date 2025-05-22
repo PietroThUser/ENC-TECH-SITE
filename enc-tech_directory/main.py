@@ -27,7 +27,7 @@ def index():
 @app.route("/home")
 def home():
     try:
-        with open("templates/roadmap_home.txt", "r") as roadmapHome_archive:
+        with open("templates/roadmap_home.txt", "r", encoding="utf-8") as roadmapHome_archive:
             roadmapHome_content = roadmapHome_archive.read()
             roadmapHome_text = formatter_roadmap(roadmapHome_content)
 

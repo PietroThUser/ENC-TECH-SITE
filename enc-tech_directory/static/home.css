@@ -20,6 +20,7 @@ body {
 
 .main_content div{
     display: flex;
+    flex-direction: column;
 }
 
 .main_content a {
@@ -28,10 +29,13 @@ body {
     font-family: "Poppins", sans-serif;
     color: white;
     text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .main_content button {
     background-color: hsla(0,0%,100%,.14);
+    display: flex;
     border: none;
     color: white;
     font-size: 16px;
@@ -45,11 +49,14 @@ body {
 }
 
 .main_content p {
+    display: flex;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     background-color: #00db3e;
     font-weight: 800;
     border-radius: 14px;
-    width: 60px;
-    text-align: center;
+    width: 80px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
 }

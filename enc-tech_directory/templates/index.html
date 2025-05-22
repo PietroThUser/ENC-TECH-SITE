@@ -6,6 +6,7 @@
     <title>ENC-TECH</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script src="https://kit.fontawesome.com/5c274821a4.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </head>
 <body style="background-color: #0a0a0a;">
     <h4 class="reddit_redirect">Criado por <a href="https://www.reddit.com/user/Vousch/"><i style="margin: 2px;" class="fa-brands fa-reddit-alien"></i>@Vousch</a></h4>
@@ -18,7 +19,7 @@
             <h5><i class="fa-solid fa-circle-check"></i>Intuitivo</h5>
             <h5><i class="fa-solid fa-circle-check" id="black_solid_div-id3"></i>Completo</h5>
         </div>
-        <button class="go_to_text">
+        <button class="go_to_text" onclick="go_to_home()">
             <a href="/home" style="text-decoration: none; color: #fff;">COMEÇAR O CURSO <i class="fa-solid fa-right-long"></i></a>
         </button>
     </div>

@@ -99,13 +99,19 @@ body {
     border: none;
     border-radius: 10px;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     background: #007d3c;
     background: -webkit-linear-gradient(90deg, rgba(0, 125, 60, 1) 50%, rgba(0, 189, 57, 1) 100%);
     background: -moz-linear-gradient(90deg, rgba(0, 125, 60, 1) 50%, rgba(0, 189, 57, 1) 100%);
     background: linear-gradient(90deg, rgba(0, 125, 60, 1) 50%, rgba(0, 189, 57, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#007D3C", endColorstr="#00BD39", GradientType=1);
     margin-top: 400px;
+    cursor: pointer;
+    font-family: 'Poppins';
+}
+
+.go_to_text i {
+    margin-left: 5px;
 }
 
 .black_solid div {
@@ -129,6 +135,7 @@ body {
         font-size: clamp(1.3125rem, 0.887rem + 2.3478vw, 3rem);
         font-weight: 400;
         width: 100%;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
     }
 
     span {
@@ -140,6 +147,7 @@ body {
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#007D3C", endColorstr="#00BD39", GradientType=1);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        text-shadow: none;
     }
 }
 
