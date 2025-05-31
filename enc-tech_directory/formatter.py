@@ -83,6 +83,7 @@ def formatter_roadmap(roadmap):
             i["class"] = "fa-solid fa-play"
 
             btn = soup.new_tag("button")
+            btn["onclick"] = f"window.location.href = '/curso{roadmapHome_index}'"
             btn_a = soup.new_tag("a")
             btn_a["href"] = f"/curso/{roadmapHome_index}"
             btn_p = soup.new_tag("p")

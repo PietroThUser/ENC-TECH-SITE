@@ -4,7 +4,7 @@ from formatter import formatter, formatter_roadmap
 
 app = Flask(__name__)
 
-@app.route("/curso/<int:actual_text>")
+@app.route("/curso<int:actual_text>")
 def hub_introduction(actual_text):
     with open(f"templates/TEXTOS/TEXTO{actual_text}.txt", "r", encoding="utf-8") as file:
         content = file.read()
