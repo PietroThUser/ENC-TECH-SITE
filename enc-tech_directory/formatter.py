@@ -74,6 +74,10 @@ def formatter_roadmap(roadmap):
 
         if line.startswith("- "):
             div = soup.new_tag("div")
+            div_text = soup.new_tag("div")
+            div_text["class"] = "div_text"
+            div["id"] = roadmapHome_index
+            div["style"] = "display: none;"
 
             i = soup.new_tag("i")
             i["class"] = "fa-solid fa-play"
@@ -81,9 +85,16 @@ def formatter_roadmap(roadmap):
             btn = soup.new_tag("button")
             btn_a = soup.new_tag("a")
             btn_a["href"] = f"/curso/{roadmapHome_index}"
+            btn_p = soup.new_tag("p")
+            btn_p.string = "Começar"
+            btn_p["class"] = "btn_p"
 
-            p = soup.new_tag("p")
-            p.string = f"Parte {roadmapHome_index}"
+            div_btn = soup.new_tag("div")
+            div_btn["class"] = "div_btn"
+
+            id_p = soup.new_tag("p")
+            id_p.string = f"Lição {roadmapHome_index}"
+            id_p["class"] = "p"
 
             a = soup.new_tag("a")
             a.string = line.replace("-", "")
@@ -91,15 +102,13 @@ def formatter_roadmap(roadmap):
             roadmapHome_index += 1
 
             btn_a.append(i)
+            btn.append(btn_p)
             btn.append(btn_a)
-            div.append(btn)
-            div.append(p)
-            div.append(a)
+            div_text.append(id_p)
+            div_text.append(a)
+            div.append(div_text)
+            div_btn.append(btn)
+            div.append(div_btn)
             soup.append(div)
-
-        elif line.startswith("---"):
-            hr = soup.new_tag("hr")
-
-            soup.append(hr)
 
     return soup.prettify()
