@@ -1,0 +1,6 @@
+# - cabeçalho nível 1  
+## - cabeçalho nível 2  
+### - cabeçalho nível 3  
+- - item de lista  
+--- - linha horizontal  
+-IMG- - inserir imagem  
